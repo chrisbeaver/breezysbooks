@@ -9,6 +9,7 @@ export default {
         extend: {
             colors: {
                 "breezy-highlight": "#6991e0",
+                "breezy-background": "#e3f3f9",
             },
         },
         plugins: [typography, forms, aspectRatio],
