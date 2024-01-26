@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landing');
+    $topics = config('app.topics');
+    return view('landing', compact('topics'));
 });
+
+Route::post('subscribe', App\Http\Controllers\JoinMailingListController::class)->name('join-mailing-list');

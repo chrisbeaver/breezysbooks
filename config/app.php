@@ -185,4 +185,12 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+    'topics' => [
+        'web_development' => 'Web Development',
+        'web_design' => 'Web Design',
+        'database' => 'Database',
+        'startups' => 'Startups',
+        'scifi' => 'SciFi',
+    ],
+
 ];
