@@ -4,7 +4,7 @@
 {{ implode(', ', $topics)}}
 
 <x-mail::button :url="$link">
-Button Text
+Confirm Email
 </x-mail::button>
 
 Thanks,<br>

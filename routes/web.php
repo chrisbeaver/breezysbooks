@@ -18,5 +18,11 @@ Route::get('/', function () {
     return view('landing', compact('topics'));
 });
 
+Route::get('mail', function () {
+    $subscriber = App\Models\Subscriber::find(1);
+
+    return new App\Mail\VisitorSubscribed($subscriber);
+});
+
 Route::post('subscribe', App\Http\Controllers\JoinMailingListController::class)->name('join-mailing-list');
 Route::get('confirm/{subscriber}/{hash}', \App\Http\Controllers\ConfirmSubscriptionController::class)->name('confirm-email');
