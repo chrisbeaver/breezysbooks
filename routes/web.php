@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::post('subscribe', App\Http\Controllers\JoinMailingListController::class)->name('join-mailing-list');
+Route::get('confirm/{subscriber}/{hash}', \App\Http\Controllers\ConfirmSubscriptionController::class)->name('confirm-email');

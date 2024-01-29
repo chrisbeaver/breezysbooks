@@ -2,13 +2,13 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Breezy's Book Giveaway</title>
-
-  <!-- Stylesheet -->
-  @vite('resources/css/app.css')
+    <title>Breezy's Book Giveaway</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Stylesheet -->
+    @vite('resources/css/app.css')
 </head>
 
 <body class="bg-breezy-background">
@@ -51,26 +51,26 @@
         </div>
     @endif
     <div>
-        <div class="md:flex flex-row md:space-x-4">
-            <div class="flex md:basis-1/3 justify-center md:p-4 rounded-b-3xl md:rounded-bl-none shadow-lg shadow-black" style="background-color: #34579b;">
+        <div class="lg:flex flex-row lg:space-x-4">
+            <div class="flex lg:basis-1/3 justify-center lg:p-4 rounded-b-3xl lg:rounded-bl-none shadow-lg shadow-black" style="background-color: #34579b;">
                 <img src="/images/breezybooks-outlined.png" >
             </div>
-            <div class="flex flex-col w-full justify-center mt-4 px-4 md:mt-none">
+            <div class="flex flex-col w-full justify-center mt-4 px-4 lg:mt-none">
                 <h2 class="text-4xl text-center font-bold tracking-tight sm:text-6xl">Build Your Book Collection for Next to Nothing!</h2>
-                <p class="mt-6 text-lg text-center md:px-48 leading-8 text-gray-800"><strong>Breezy is giving away the books he already read.</strong> They
+                <p class="mt-6 text-lg text-center lg:px-48 leading-8 text-gray-800"><strong>Breezy is giving away the books he already read.</strong> They
                     need a good home. If you'd like to pick up some gently used books to add to your collection, get on our mailing
                     list! We will send you updates of listings, and tell you how to claim your books!
                 </p>
             </div>
         </div>
-        <div class="md:flex md:flex-row items-center md:space-x-4">
-            <div class="flex flex-col mx-4 items-center md:basis-2/3">
+        <div class="lg:flex lg:flex-row lg:mt-8 items-center lg:space-x-4">
+            <div class="flex flex-col mx-4 items-center lg:basis-2/3">
                 <div class="bg-white shadow sm:rounded-lg w-full">
                     <div class="px-4 py-5 sm:p-6">
-                        <form class="md:flex md:flex-row items-center px-4" method="POST" action="{!! route('join-mailing-list') !!}">
+                        <form class="lg:flex lg:flex-row items-center px-4" method="POST" action="{!! route('join-mailing-list') !!}">
                             @csrf
                             <div class="flex flex-col items-center w-full">
-                                <div class="flex flex-col md:flex-row justify-center">
+                                <div class="flex flex-col lg:flex-row justify-center">
                                     <div>
                                         <label class="text-base font-semibold text-gray-900">Topics</label>
                                         <p class="text-sm text-gray-500">Which topics are you interested in?</p>
@@ -87,7 +87,7 @@
                                         </fieldset>
                                     </div>
                                 </div>
-                                <div class="w-full md:flex mt-4 md:flex-row md:content-center md:items-center md:w-3/4 tw-email-input">
+                                <div class="w-full lg:flex mt-4 lg:flex-row lg:content-center lg:items-center lg:w-3/4 tw-email-input">
                                     <div class="w-full relative rounded-md shadow-sm">
                                         <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                                             <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -107,14 +107,14 @@
                                         <span id="comments-description" class="text-gray-500"><span class="sr-only">I have books to contribute.</span>that I would like to contribute.</span>
                                     </div>
                                 </div>
-                                <button type="submit" class="w-full md:w-auto md:ml-2 mt-4 md:mt-0 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Show Me Some Books!</button>
+                                <button type="submit" class="w-full lg:w-auto lg:ml-2 mt-4 lg:mt-0 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Show Me Some Books!</button>
                             </div>
                         </form>
                     </div>
                 </div>
                 <p class="mt-6 text-lg text-center leading-8 text-gray-800">Our bookshelves are filling up, and it's time to make some room for the next gang of books.</p>
             </div>
-            <div class="flex justify-center mt-4 md:mt-none">
+            <div class="flex justify-center mt-4 lg:mt-none">
                 <img src="/images/breezy-books.png" >
             </div>
         </div>

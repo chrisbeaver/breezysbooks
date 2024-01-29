@@ -9,6 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 use App\Models\Subscriber;
+use Hash;
 
 class VisitorSubscribed extends Mailable
 {
@@ -37,10 +38,15 @@ class VisitorSubscribed extends Mailable
      */
     public function content(): Content
     {
+        $hash = base64_encode(Hash::make($this->subscriber->id));
+        $id = $this->subscriber->id;
+
+        $link = config('app.url') . "/confirm/$id/$hash";
+
         return new Content(
             markdown: 'mail.subscribed',
-            with: [
-                'topics' => $this->subscriber->topics
+            with: [ 'topics' => $this->subscriber->topics,
+                'link' => $link
             ]
         );
     }

@@ -3,7 +3,7 @@
 
 {{ implode(', ', $topics)}}
 
-<x-mail::button :url="''">
+<x-mail::button :url="$link">
 Button Text
 </x-mail::button>
 

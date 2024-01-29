@@ -29,7 +29,6 @@ class JoinMailingListController extends Controller
 
         Mail::to($validated['email'])->send(new VisitorSubscribed($subscriber));
 
-        $chosen = collect($validated['topics'])->map(fn ($t) => $map[$t])->toArray();
         return redirect()->back()->with('success', "We have you down for " . implode(', ', $chosen) . "! We'll send updates to <strong>" . $validated['email'] . "</strong> about getting your books!");
     }
 }

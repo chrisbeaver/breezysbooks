@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('email');
             $table->json('topics');
             $table->boolean('contributor')->default(0);
+            $table->boolean('confirmed')->default(0);
             $table->timestamps();
         });
     }
