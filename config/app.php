@@ -191,6 +191,7 @@ return [
         'database' => 'Database',
         'startups' => 'Startups',
         'scifi' => 'SciFi',
+        'nonfiction' => 'Non-Fiction'
     ],
 
 ];
