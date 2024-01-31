@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Breezy's Book Giveaway</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- Stylesheet -->
     @vite('resources/css/app.css')
 </head>
@@ -115,11 +118,11 @@
                 <p class="mt-6 text-lg text-center leading-8 text-gray-800">Our bookshelves are filling up, and it's time to make some room for the next gang of books.</p>
             </div>
             <div class="flex justify-center mt-4 lg:mt-none">
-                <img src="/images/breezy-books.png" >
+                <img src="/images/books.png" >
             </div>
         </div>
         <div class="mt-6 text-lg text-center leading-8 text-gray-800">
-            <p>More stuf to say here.</p>
+            <p></p>
         </div>
     </div>
 </body>
